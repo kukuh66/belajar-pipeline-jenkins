@@ -8,17 +8,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Step for build'
+                echo ('Step for build')
+                sleep (5)
+                echo ('Step for build2')
             }
         }
         stage('Test') {
             steps {
-                echo 'step for test'
+                echo ('step for test')
+                sleep (10)
+                echo ('step for test 2')
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Hello Pipeline Deploy'
+                echo ('Hello Pipeline Deploy')
             }
         }
     }
