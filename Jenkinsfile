@@ -12,4 +12,19 @@ pipeline {
             }
         }
     }
+
+    post {
+        always {
+            echo "Always Hello"
+        }
+        success {
+            echo "Build Succes"
+        }
+        failure {
+            ehco "Oh no, Failure"
+        }
+        cleanup {
+            echo "Dont care success"
+        }
+    }
 }
